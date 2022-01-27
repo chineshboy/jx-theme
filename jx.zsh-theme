@@ -256,5 +256,6 @@ build_prompt() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt)\n%{%F{magenta}%}╰→ ' 
+PROMPT='%{%f%b%k%}$(build_prompt)
+%{%F{magenta}%}➜ ' 
 RPROMPT='%{$(echotc UP 1)%} ⌚ $(current_time) %{$(echotc DO 1)%}'
