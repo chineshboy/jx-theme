@@ -239,7 +239,7 @@ prompt_aws() {
 }
 
 current_time() {
-   echo "%{$fg_bold[red]%}%*%{$reset_color%}"
+   echo "%B%{%F[red]%}%*%{$reset_color%}%b"
 }
 
 ## Main prompt
@@ -256,6 +256,5 @@ build_prompt() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt)
-%{$fg[magenta]%}➜ '
+PROMPT='%{%f%b%k%}$(build_prompt)\n%{%F[magenta]%}╰→ ' 
 RPROMPT='%{$(echotc UP 1)%} ⌚ $(current_time) %{$(echotc DO 1)%}'
