@@ -257,5 +257,5 @@ build_prompt() {
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt)
-%{%F{magenta}%}➜ ' 
+%B%{%F{magenta}%}➜ %{$reset_color%}%b' 
 RPROMPT='%{$(echotc UP 1)%} ⌚ $(current_time) %{$(echotc DO 1)%}'
