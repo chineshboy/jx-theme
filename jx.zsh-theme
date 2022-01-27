@@ -243,7 +243,7 @@ current_time() {
 }
 
 prompt_indicator() {
-  echo "%{%F{magenta}%}%B>%b%{$reset_color%}"
+  echo "%B%{%F{magenta}%}>%{$reset_color%}%b"
 }
 
 ## Main prompt
