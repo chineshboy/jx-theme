@@ -243,7 +243,7 @@ current_time() {
 }
 
 prompt_indicator() {
-  echo "%B%{%F{magenta}%}➜ %{$reset_color%}%b"
+  echo $'%{%F{magenta}%}%B\u276f%b%{$reset_color%}'
 }
 
 ## Main prompt
@@ -261,5 +261,5 @@ build_prompt() {
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt)
-$(prompt_indicator)' 
+$(prompt_indicator) ' 
 RPROMPT='%{$(echotc UP 1)%} ⌚ $(current_time) %{$(echotc DO 1)%}'
