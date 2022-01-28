@@ -239,11 +239,11 @@ prompt_aws() {
 }
 
 current_time() {
-  echo "%B%{%F{red}%}%*%{$reset_color%}%b"
+  echo "%B%{%F{red}%}%*%{%k%}%{%f%}%b"
 }
 
 prompt_indicator() {
-  echo "%{%F{magenta}%}➜%{$reset_color%} "
+  echo "%{%F{magenta}%}➜%{%k%}%{%f%} "
 }
 
 ## Main prompt
